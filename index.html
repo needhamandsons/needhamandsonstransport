@@ -17,7 +17,7 @@
   --silver:#7a8da6;
   --silver2:#a8bdd4;
   --white:#f0f3f6;
-  --muted:#4a5f78;
+  --muted:#8aaac4;
   --border:rgba(100,130,165,0.14);
   --accent:#1e3a6e;
 }
@@ -27,7 +27,8 @@ body{
   color:var(--white);
   font-family:'Source Sans 3',sans-serif;
   font-weight:300;
-  line-height:1.7;
+  font-size:17px;
+  line-height:1.75;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
   padding-top:98px;
@@ -111,7 +112,7 @@ nav a:hover{color:var(--white)}
   background:var(--navy2);
   border-top:none;
   border-bottom:3px solid var(--accent);
-  padding:2.5rem 5vw;
+  padding:1.5rem 5vw;
   display:grid;grid-template-columns:1fr auto;
   align-items:center;gap:3rem;
   margin-top:0;
@@ -149,7 +150,7 @@ nav a:hover{color:var(--white)}
 .stats-bar{
   background:var(--navy3);
   border-bottom:1px solid var(--border);
-  padding:2rem 5vw;
+  padding:1.25rem 5vw;
   display:grid;grid-template-columns:repeat(4,1fr);
   gap:0;
 }
@@ -166,10 +167,10 @@ nav a:hover{color:var(--white)}
   margin-bottom:0.25rem;
 }
 .stat-num span{color:var(--silver2)}
-.stat-label{font-size:0.75rem;color:var(--muted);letter-spacing:0.06em;text-transform:uppercase}
+.stat-label{font-size:0.82rem;color:var(--silver2);letter-spacing:0.06em;text-transform:uppercase}
 
 /* ── SECTIONS ── */
-section{padding:7rem 5vw}
+section{padding:3.5rem 5vw}
 .eyebrow{
   font-family:'Oswald',sans-serif;
   font-size:0.7rem;font-weight:500;
@@ -189,11 +190,11 @@ h2{
 .section-intro{
   font-size:0.92rem;color:var(--muted);
   max-width:48ch;line-height:1.85;
-  margin-bottom:4rem;
+  margin-bottom:2rem;
 }
 
 /* ── SERVICES ── */
-#services{background:var(--navy)}
+#services{background:var(--navy);padding:3.5rem 5vw}
 .services-grid{
   display:grid;grid-template-columns:repeat(3,1fr);
   border:1px solid var(--border);
@@ -228,10 +229,10 @@ h2{
   text-transform:uppercase;letter-spacing:0.06em;
   color:var(--white);margin-bottom:0.75rem;
 }
-.svc-desc{font-size:0.84rem;color:var(--muted);line-height:1.8}
+.svc-desc{font-size:0.95rem;color:var(--silver2);line-height:1.8}
 
 /* ── WHY US ── */
-#why{background:var(--navy2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+#why{background:var(--navy2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:3.5rem 5vw}
 .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start}
 .why-points{display:flex;flex-direction:column;gap:0;margin-top:1rem}
 .why-point{
@@ -253,7 +254,7 @@ h2{
   text-transform:uppercase;letter-spacing:0.08em;
   color:var(--white);margin-bottom:0.35rem;
 }
-.why-point-desc{font-size:0.83rem;color:var(--muted);line-height:1.75}
+.why-point-desc{font-size:0.95rem;color:var(--silver2);line-height:1.75}
 .why-metrics{display:flex;flex-direction:column;gap:1rem}
 .metric{
   background:var(--navy);
@@ -261,7 +262,7 @@ h2{
   border-radius:3px;
   padding:1.5rem 1.75rem;
 }
-.metric-label{font-size:0.75rem;color:var(--muted);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:0.4rem}
+.metric-label{font-size:0.82rem;color:var(--silver2);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:0.4rem}
 .metric-val{
   font-family:'Oswald',sans-serif;
   font-size:1.8rem;font-weight:600;color:var(--white);
@@ -272,7 +273,7 @@ h2{
 .metric-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--silver2));border-radius:2px}
 
 /* ── HOW IT WORKS ── */
-#how{background:var(--navy)}
+#how{background:var(--navy);padding:3.5rem 5vw}
 .steps{
   display:grid;grid-template-columns:repeat(4,1fr);
   gap:0;margin-top:1rem;
@@ -297,13 +298,14 @@ h2{
   text-transform:uppercase;letter-spacing:0.08em;
   color:var(--white);margin-bottom:0.6rem;
 }
-.step-desc{font-size:0.82rem;color:var(--muted);line-height:1.8}
+.step-desc{font-size:0.95rem;color:var(--silver2);line-height:1.8}
 
 /* ── DRIVE WITH US ── */
 #drive{
   background:var(--navy2);
   border-top:1px solid var(--border);
   border-bottom:1px solid var(--border);
+  padding:3.5rem 5vw;
 }
 .drive-inner{
   display:grid;grid-template-columns:1fr 1fr;
@@ -325,7 +327,7 @@ h2{
   text-transform:uppercase;letter-spacing:0.08em;
   color:var(--silver2);margin-bottom:0.3rem;
 }
-.perk-desc{font-size:0.78rem;color:var(--muted);line-height:1.6}
+.perk-desc{font-size:0.9rem;color:var(--silver2);line-height:1.6}
 .drive-cta-box{
   background:var(--navy);
   border:1px solid var(--border);
@@ -339,7 +341,7 @@ h2{
   text-transform:uppercase;color:var(--white);
   margin-bottom:1rem;line-height:1.2;
 }
-.drive-cta-desc{font-size:0.88rem;color:var(--muted);line-height:1.8;margin-bottom:2rem}
+.drive-cta-desc{font-size:1rem;color:var(--silver2);line-height:1.8;margin-bottom:2rem}
 .drive-detail{display:flex;flex-direction:column;gap:0.6rem;margin-bottom:2rem}
 .drive-detail-row{
   display:flex;align-items:center;gap:0.75rem;
@@ -348,12 +350,12 @@ h2{
 .drive-dot{width:6px;height:6px;background:var(--silver2);border-radius:1px;flex-shrink:0}
 
 /* ── CONTACT ── */
-#contact{background:var(--navy)}
+#contact{background:var(--navy);padding:3.5rem 5vw}
 .contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:7rem;align-items:start}
 .contact-intro h2{margin-bottom:1rem}
-.contact-desc{font-size:0.88rem;color:var(--muted);line-height:1.85;margin-bottom:2.5rem;max-width:36ch}
+.contact-desc{font-size:1rem;color:var(--silver2);line-height:1.85;margin-bottom:2.5rem;max-width:36ch}
 .contact-details{display:flex;flex-direction:column;gap:0.75rem}
-.cdetail{display:flex;align-items:center;gap:0.75rem;font-size:0.82rem;color:var(--muted)}
+.cdetail{display:flex;align-items:center;gap:0.75rem;font-size:0.95rem;color:var(--silver2)}
 .cdot{width:6px;height:6px;background:var(--silver);border-radius:1px;flex-shrink:0}
 form{display:flex;flex-direction:column;gap:1rem}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
@@ -386,7 +388,7 @@ textarea{min-height:100px;resize:vertical}
 footer{
   background:var(--navy2);
   border-top:1px solid var(--border);
-  padding:2.5rem 5vw;
+  padding:1.5rem 5vw;
   display:flex;justify-content:space-between;align-items:center;
   flex-wrap:wrap;gap:1rem;
 }
@@ -490,7 +492,8 @@ footer{
     <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
     <li><a href="#services">Our Services</a></li>
     <li><a href="#why">About Us</a></li>
-    <li><a href="#drive">Drive With Us</a></li>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfUAtsqsxiBhNXWfYVxH1VCACSP5Ustb2uMr32qw44BOABM1g/viewform" target="_blank">Drive With Us</a></li>
+    <li><a href="#contact">Contact Us</a></li>
   </ul>
 </nav>
 
@@ -501,11 +504,11 @@ footer{
 </section>
 <div class="hero-tagline">
   <p class="hero-tagline-text">
-    Needham and Sons Transport is a veteran owned and operated, professional freight and cargo dispatching service homeported in Conway, Missouri serving at home and nationwide. We offer services that treat your business, equipment and your family as if it were our own. Our goal is to consistently be a source of trust for you, your family and your business.
+    Needham and Sons Transport is a veteran owned, family operated, professional freight and cargo dispatching service homeported in Conway, Missouri serving at home and nationwide. We offer services that treat your business, equipment and your family as if it were our own. Our goal is to consistently be a source of trust for you, your family and your business.
   </p>
   <div class="hero-cta-group">
     <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
-    <a href="#drive" class="btn btn-outline">Drive With Us</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUAtsqsxiBhNXWfYVxH1VCACSP5Ustb2uMr32qw44BOABM1g/viewform" target="_blank" class="btn btn-outline">Drive With Us</a>
   </div>
 </div>
 
@@ -532,15 +535,15 @@ footer{
 <!-- SERVICES -->
 <section id="services">
   <div class="eyebrow reveal">Our Services</div>
-  <h2 class="reveal">Our Dispatching Services<br>Built to Keep You Rolling</h2>
-  <p class="section-intro reveal">Whether you're an independent owner-operator or managing a fleet, we handle everything off the road so you can focus on what you do best.</p>
+  <h2 class="reveal">Our Dispatch Services<br>Are Built to Move You</h2>
+  <p class="section-intro reveal">Whether you're a small independent owner-operator or an established fleet looking for a more organized approach, we handle the paperwork in the background while you focus on the road ahead.</p>
   <div class="services-grid">
     <div class="svc reveal">
       <div class="svc-icon">
         <svg viewBox="0 0 24 24"><path d="M1 3h15v13H1zm16 5h4l3 3v5h-7V8zm0 2v4h5v-2.5L19.5 10H17zM4 16c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2zm14 0c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2z"/></svg>
       </div>
       <div class="svc-name">Load Finding &amp; Booking</div>
-      <p class="svc-desc">We search all major load boards and negotiate the best rates on your behalf — so your truck is never sitting idle and your revenue stays up.</p>
+      <p class="svc-desc">We understand that the best loads aren't always on the load board. We work with brokers around the country and negotiate prices on your behalf. A truck that doesn't move, doesn't bring income.</p>
     </div>
     <div class="svc reveal">
       <div class="svc-icon">
@@ -554,7 +557,7 @@ footer{
         <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
       </div>
       <div class="svc-name">Route Optimization</div>
-      <p class="svc-desc">We plan your lanes to cut deadhead miles and maximize your revenue per mile — keeping every run profitable, not just the big ones.</p>
+      <p class="svc-desc">We factor in live fuel pricing across the country and model every trip around your specific equipment specifications — so your routes are optimized for your truck, not just any truck. Less wasted miles, lower fuel costs, and more money in your pocket on every run.</p>
     </div>
   </div>
 </section>
@@ -587,13 +590,7 @@ footer{
             <p class="why-point-desc">We treat your business and your family like our own. That's not a slogan — it's the standard we hold ourselves to on every single load.</p>
           </div>
         </div>
-        <div class="why-point reveal">
-          <div class="why-num">04</div>
-          <div>
-            <div class="why-point-title">Best Rate Guarantee</div>
-            <p class="why-point-desc">We negotiate hard on every load. Find a better rate for the same load and we'll match it — no questions asked.</p>
-          </div>
-        </div>
+
       </div>
     </div>
     <div class="why-metrics">
@@ -684,7 +681,7 @@ footer{
         <div class="drive-detail-row"><div class="drive-dot"></div>No setup fees or contracts</div>
         <div class="drive-detail-row"><div class="drive-dot"></div>Free consultation — no pressure</div>
       </div>
-      <a href="#contact" class="btn btn-primary">Get Started Today</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUAtsqsxiBhNXWfYVxH1VCACSP5Ustb2uMr32qw44BOABM1g/viewform" target="_blank" class="btn btn-primary">Get Started Today</a>
     </div>
   </div>
 </section>
@@ -697,10 +694,20 @@ footer{
       <h2 class="reveal">Let's Get<br>You Moving</h2>
       <p class="contact-desc reveal">Fill out the form and someone from our team will be in touch within one business day. No obligation, no pressure.</p>
       <div class="contact-details">
-        <div class="cdetail reveal"><div class="cdot"></div>Based in Conway, MO</div>
-        <div class="cdetail reveal"><div class="cdot"></div>Serving all 48 contiguous states</div>
-        <div class="cdetail reveal"><div class="cdot"></div>Owner-operators and fleets welcome</div>
-        <div class="cdetail reveal"><div class="cdot"></div>Available 24/7 once you're on board</div>
+        <div class="cdetail reveal"><div class="cdot"></div>Based in Conway, MO &nbsp;·&nbsp; Serving all 48 contiguous states</div>
+        <div class="cdetail reveal"><div class="cdot"></div>Owner-operators and fleets welcome &nbsp;·&nbsp; Available 24/7 once you're on board</div>
+        <div style="margin-top:1.5rem;display:flex;flex-direction:column;gap:1.25rem;">
+          <div class="reveal" style="background:var(--navy3);border:1px solid var(--border);border-radius:3px;padding:1.25rem 1.5rem;">
+            <div style="font-family:'Oswald',sans-serif;font-size:1rem;font-weight:500;text-transform:uppercase;letter-spacing:0.06em;color:var(--white);margin-bottom:0.5rem;">Lawrence Andrew Needham</div>
+            <div style="font-size:0.92rem;color:var(--silver2);margin-bottom:0.25rem;">&#128222; <a href="tel:4805727779" style="color:var(--silver2);text-decoration:none;">(480) 572-7779</a></div>
+            <div style="font-size:0.92rem;color:var(--silver2);">&#9993; <a href="mailto:lawrence.needham@needham-and-sons.com" style="color:var(--silver2);text-decoration:none;">lawrence.needham@needham-and-sons.com</a></div>
+          </div>
+          <div class="reveal" style="background:var(--navy3);border:1px solid var(--border);border-radius:3px;padding:1.25rem 1.5rem;">
+            <div style="font-family:'Oswald',sans-serif;font-size:1rem;font-weight:500;text-transform:uppercase;letter-spacing:0.06em;color:var(--white);margin-bottom:0.5rem;">Travis Needham</div>
+            <div style="font-size:0.92rem;color:var(--silver2);margin-bottom:0.25rem;">&#128222; <a href="tel:4177187620" style="color:var(--silver2);text-decoration:none;">(417) 718-7620</a></div>
+            <div style="font-size:0.92rem;color:var(--silver2);">&#9993; <a href="mailto:travis.needham@needham-and-sons.com" style="color:var(--silver2);text-decoration:none;">travis.needham@needham-and-sons.com</a></div>
+          </div>
+        </div>
       </div>
     </div>
     <form onsubmit="handleSubmit(event)" class="reveal">
@@ -724,7 +731,7 @@ footer{
       </div>
       <div class="form-row">
         <div class="form-group">
-          <label for="truck">Equipment Type</label>
+          <label for="truck">Equipment Type Requested</label>
           <select id="truck">
             <option value="" disabled selected>Select type</option>
             <option>Dry Van</option>
@@ -735,16 +742,7 @@ footer{
             <option>Other</option>
           </select>
         </div>
-        <div class="form-group">
-          <label for="fleet">Fleet Size</label>
-          <select id="fleet">
-            <option value="" disabled selected>Select size</option>
-            <option>1 truck (Owner-Operator)</option>
-            <option>2–5 trucks</option>
-            <option>6–20 trucks</option>
-            <option>20+ trucks</option>
-          </select>
-        </div>
+  
       </div>
       <div class="form-group">
         <label for="notes">Preferred Lanes or Notes (optional)</label>
@@ -758,6 +756,13 @@ footer{
   </div>
 </section>
 
+
+<!-- DISCLAIMER -->
+<div style="background:#020710;border-top:1px solid rgba(100,130,165,0.1);padding:1.25rem 5vw;text-align:left;">
+  <p style="font-family:'Source Sans 3',sans-serif;font-size:0.75rem;color:#3d5570;line-height:1.7;max-width:900px;margin:0;">
+    <strong style="color:#4a6380;">Disclaimer:</strong> The statistics, figures, and performance metrics displayed on this website are for illustrative purposes only and do not represent actual, guaranteed, or historical performance results. Individual results will vary based on equipment type, location, market conditions, and other factors. Needham And Sons Transport, LLC makes no representations or warranties regarding specific outcomes or earnings.
+  </p>
+</div>
 <!-- FOOTER -->
 <footer>
   <div>
@@ -767,7 +772,7 @@ footer{
   <div class="footer-links">
     <a href="#services">Our Services</a>
     <a href="#why">About Us</a>
-    <a href="#drive">Drive With Us</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUAtsqsxiBhNXWfYVxH1VCACSP5Ustb2uMr32qw44BOABM1g/viewform" target="_blank">Drive With Us</a>
     <a href="#contact">Contact</a>
   </div>
 </footer>
