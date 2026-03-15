@@ -70,7 +70,7 @@ body::before{
   color:rgba(232,241,248,0.85);
   display:inline-flex;align-items:center;gap:1rem;
 }
-.marquee-item::after{content:'\25C6';font-size:0.4rem;opacity:0.5}
+.marquee-item::after{content:'\\25C6';font-size:0.4rem;opacity:0.5}
 
 /* ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ NAV ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ */
 nav{
@@ -515,6 +515,13 @@ footer{
 @media(max-width:560px){
   body{padding-top:102px}
   section{padding:4rem 5vw}
+  .hero-banner{
+    min-height:0;
+    max-height:none;
+    height:auto;
+    object-fit:contain;
+    object-position:center;
+  }
   .steps{grid-template-columns:1fr}
   .step{border-right:none;border-bottom:1px solid var(--border)}
   .step:last-child{border-bottom:none}
@@ -933,6 +940,7 @@ if (quoteForm && quoteStatus) {
 </script>
 </body>
 </html>
+
 
 
 
