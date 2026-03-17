@@ -121,7 +121,8 @@ nav a:hover{color:var(--white)}
 }
 .hero-banner{
   width:100%;
-  height:clamp(120px, 28vw, 320px);
+  height:auto;
+  max-height:none;
   display:block;
   object-fit:contain;
   object-position:center center;
@@ -514,7 +515,7 @@ footer{
   .form-row{grid-template-columns:1fr}
   footer{flex-direction:column;align-items:flex-start}
   .hero-tagline{grid-template-columns:1fr}
-  .hero-banner{height:clamp(150px, 26vw, 220px);border-radius:0}
+  .hero-banner{height:auto;max-height:none;border-radius:0}
   .hero-tagline{padding:1.5rem 5vw;border-radius:0}
   .stats-bar{margin-left:4vw;margin-right:4vw}
   form{padding:1.35rem}
@@ -523,7 +524,7 @@ footer{
   body{padding-top:112px}
   section{padding:4rem 5vw}
   .hero-banner{
-    height:120px;
+    height:auto;
     max-height:none;
     object-fit:contain;
     object-position:center center;
@@ -672,7 +673,7 @@ footer{
 <section id="contact">
   <div class="contact-grid">
     <div class="contact-intro">
-      <div class="eyebrow reveal">Get In Touch</div>
+      <div class="eyebrow reveal">Get a Free Quote</div>
       <h2 class="reveal">Let us Move<br>Your Freight.</h2>
       <p class="contact-desc reveal">Fill out the form and someone from our team will be in touch within one business day. No obligation, no pressure.</p>
       <div class="contact-details">
